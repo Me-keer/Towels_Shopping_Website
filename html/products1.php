@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+     <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	 <link rel="stylesheet" href="../css/style1.css"> 
+	 <title>All Products-Jai bharath Textiles</title>
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,600;1,800&display=swap" rel="stylesheet">
+     <style>
+	    .price{
+		color:red;
+		font-weight:bold;
+		}
+		ul>li>span>a{
+			border:2px solid rgba(255, 95, 136, 0.5);
+			border-radius:5px;
+
+		}
+		#search {
+    width: 700px;
+    margin-left:50px;
+    text-align:center;
+         }
+	 </style>
+ </head>
+<body>
+	<div class='header'>
+    <div class="contain">
+		 <header>
+            <div class="nav">
+               <img src="../images/logo4.jpg" alt="logo"> 			
+		         <nav>
+		             <ul id="MenuItems">
+			             <li><a href="../index.html">HOME</a></li>
+				         <li><a href="products1.php">PRODUCTS</a></li>
+						 <li><a href="loginh.php">MY ACCOUNT</a></li>					   
+				         <li><a href="about.php">ABOUT</a></li>
+				         <li><a href="contact.php">CONTACT</a></li>
+						 <li><span><a href="cart.php"> CART
+							 <?php
+							  session_start();
+							  if(isset($_SESSION['cart'])){
+							  $no=count($_SESSION['cart']);
+							  echo"($no)";
+							  }
+							  else{
+								  echo"(0)";
+							  }
+							 ?>
+						 </a></span></li>
+					 </ul> 
+		         </nav>
+				
+				<img src="../images/menu.png" alt="menu icon" class="menu" onclick="menuToggle()"> 
+		    </div>	 
+		</header>
+	 </div>
+	</div>
+	<br>
+	
+     
+<br>
+<br>
+	 <h2 class="title">All Products</h2>
+	 <div class="small-container">
+		 <div class="row">
+		     <div class="col-4">
+			     <a href="pd1.php">
+			     <img src="../images/f1.jpg" alt="white towel">
+				 <h4>White 100% Cotton 8 Pieces 550 GSM Towel Set</h4></a>
+				 <p class="price"><b>&#8377;</b>2,249</p>
+			 </div>
+			 <div class="col-4">
+			     <a href="pd2.php">
+			     <img src="../images/f2.jpg" alt="kids towel">
+				 <h4>Frozen Pink Microfiber Bath Towel</h4></a>
+				 <p class="price"><b>&#8377;</b>199</p>
+			 </div>
+			 <div class="col-4">
+                 <a href="pd3.php">
+			     <img src="../images/f3.jpg" alt="ladies towel">
+				 <h4>Red Cotton 280 GSM Ladies Bath Towel</h4></a>
+				 <p class="price"><b>&#8377;</b>229</p>
+			 </div>
+			 </div>
+			 <div class="row">
+			 <div class="col-4">
+			     <a href="pd4.php">
+			     <img src="../images/f4.jpg" alt="face towel">
+				 <h4>Set of 5 Blue Cotton 500 GSM Face Towels</h4></a>
+				 <p class="price"><b>&#8377;</b>349</p>
+			 </div>
+		     <div class="col-4">
+			     <a href="pd5.php">
+			     <img src="../images/f5.jpg" alt="white towel">
+				 <h4>Red Cotton 450 GSM Bath Towel</h4></a>
+				 <p class="price"><b>&#8377;</b>949</p>
+			 </div>
+			 <div class="col-4">
+			     <a href="pd6.php">
+			     <img src="../images/f6.jpg" alt="kids towel">
+				 <h4>Black Cotton 390 GSM Bath Towel</h4></a>
+				 <p class="price"><b>&#8377;</b>829</p>
+			 </div>
+			 </div>
+	</div>
+	 <div class="page-btn">
+	    <a href="products1.php"><span>1</span></a>
+	    <a href="products2.php"><span>2</span></a>
+		<a href="products2.php"><span>&#8594;</span></a>
+	 </div>
+	 <footer>
+	     <div class="container2">
+		     <div class="row">
+			     <div class="footer-col-1">
+				     <h3>Download Our App</h3>
+					 <p>Download App for Android and ios mobile phone</p>
+					 <div class="alogo">
+					     <img src="../images/app.png" alt="apple store">
+						 <img src="../images/goog.png" alt="google play store">
+					 </div>
+				 </div>
+				 <div class="footer-col-2">
+				     <img src="../images/logo4.jpg" alt='logo'>
+					 <p>Our products are crafted with high-quality material. Great attention to detail is given to trims and execution.
+					 Soft and luxurious or textured and earthy, we bring an entire range for you to choose from. Lovely homes are made 
+					 with your unique touch and maspar. Whatever be your style, Maspar is here to bring alive your Home Decor.</p>
+				 </div>
+				 <div class="footer-col-3">
+				     <h3>Useful links</h3>
+					 <ul>
+					     <li>Coupons</li>
+					     <li>Blog Post</li>
+						 <li>Return policy</li>
+					 </ul>
+				 </div>
+				 <div class="footer-col-4">
+				     <h3>Follow Us</h3>
+					 <ul>
+					     <li>Facebook</li>
+					     <li>Twittwer</li>
+						 <li>Instagram</li>
+						 <li>YouTube</li>
+					 </ul>
+				 </div>
+			 </div>
+			 <hr>
+		   <div class="copy">
+		     <p>JaiBharath &#169; 2021</p>
+		   </div>
+		 </div>
+	 </footer>
+	 <script>
+	     var MenuItems= document.getElementById("MenuItems");
+		 MenuItems.style.maxHeight = "0px";
+		 function menuToggle(){
+		     if (MenuItems.style.maxHeight == "0px")
+			 {
+			    MenuItems.style.maxHeight = "200px";
+				}
+			else
+			{
+			MenuItems.style.maxHeight = "0px";
+			}
+		}
+		 
+	 </script>
+	 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Towels website" />
+    <meta name="keywords" content="html,css,js" />
+    <meta name="author" content="Keerthana B K" />
+    <meta name="viewport" content="width=device-width ,initial-scale = 1.0">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Home-Jai bharath Textiles</title>
+    <link rel="connect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,600;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="contain">
+            <div class="nav">
+                <img src="./images/logo4.jpg" alt="logo" id="logo">
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="./html/products1.php">PRODUCTS</a></li>
+                        <li><a href="./html/loginh.php">MY ACCOUNT</a></li>
+                        <li><a href="./html/about.php">ABOUT</a></li>
+                        <li><a href="./html/contact.php">CONTACT</a></li>
+
+                    </ul>
+                </nav>
+                <img src="./images/menu.png" alt="menu icon" class="menu" onclick="menuToggle()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h1>Quality Never Goes Out Of Style...</h1>
+                    <a href="./html/products1.php" class="btn">Purchase Now &#10140;</a>
+                </div>
+                <div class="col-2">
+                    <img src="./images/wall.jpg" alt="towel stacked">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---featured categories-->
+    <div class="categories">
+        <div class="small-container">
+            <h2 class="title">Our Products</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="./images/beach7.jpg" alt="beach towel">
+                    <h3>Beach Towels</h3>
+                </div>
+                <div class="col-3">
+                    <img src="./images/kitchen1.jpg" alt="kitchen towel">
+                    <h3>Kitchen Towels</h3>
+                </div>
+                <div class="col-3">
+                    <img src="./images/kids.jpg" alt="kids towel">
+                    <h3>Kids Towel</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="alogo">
+                        <img src="./images/app.png" alt="apple store">
+                        <img src="./images/goog.png" alt="google play store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo4.jpg" alt='logo'>
+                    <p>Our products are crafted with high-quality material. Great attention to detail is given to trims and execution. Soft and luxurious or textured and earthy, we bring an entire range for you to choose from. Lovely homes are made with
+                        your unique touch and maspar. Whatever be your style, Maspar is here to bring alive your Home Decor.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twittwer</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copy">
+                <p>JaiBharath &#169; 2021</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
